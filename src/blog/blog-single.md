@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: Single blog
+title: Dlaczego strona powinna być responsywna?
 description: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
 date: 2022-11-01T19:48:19.498Z
 author: Przemek Miros
