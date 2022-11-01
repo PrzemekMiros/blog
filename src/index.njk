@@ -15,9 +15,9 @@ layout: base.njk
                         <li class="list-inline-item"><a href="#">
                             <img src="/assets/images/other/author-sm.png" class="author" alt="author"/>{{ post.data.author }}</a>
                         </li>
-                        <li class="list-inline-item">{{ post.data.date }}</li>
+                        <li class="list-inline-item">{{ page.date | postDate }}</li>
                     </ul>
-                    <h5 class="post-title mb-0 mt-4"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h5>
+                    <h5 class="post-title mb-0 mt-3"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h5>
                 </div>
                 <!-- thumbnail -->
                 <div class="thumb rounded">

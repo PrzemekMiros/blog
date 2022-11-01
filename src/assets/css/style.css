@@ -1021,7 +1021,7 @@ section {
 }
 
 .main-content-md {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 80px;
 }
 
@@ -1518,6 +1518,9 @@ section {
   bottom: -30px;
   width: 60px;
 }
+.post-px {
+  padding: 0 100px;
+}
 .post.post-over-content {
   position: relative;
 }
@@ -1570,7 +1573,7 @@ section {
   font-size: 36px;
 }
 .post-single .featured-image {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .post-single .featured-image img {
   border-radius: 10px;
@@ -2462,7 +2465,6 @@ button:focus {
 /*=================================================================*/
 .breadcrumb {
   font-size: 14px;
-  padding: 0;
   margin-bottom: 20px;
   list-style: none;
   background-color: transparent;
@@ -3095,7 +3097,8 @@ button:focus {
     width: 50px;
   }
 
-  .post.post-xl .post-top {
+  .post.post-xl .post-top,
+  .post-px {
     padding: 0 20px;
   }
 
