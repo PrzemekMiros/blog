@@ -1,6 +1,8 @@
 ---
 layout: post.njk
 title: Zatrzymaj użytkownika dłużej na swojej stronie
+description: " Masz tylko 15 sekund (lub mniej), aby przekonać nowych
+  użytkowników, aby pozostali w mocy samego projektu witryny."
 date: 2022-11-01T21:39:00.389Z
 author: Przemek Miros
 thumbnail: /assets/images/uploads/users.webp
