@@ -1,6 +1,9 @@
 ---
 layout: post.njk
 title: Dlaczego strona powinna być responsywna?
+description: Według badań około 80% osób, które mają telefon komórkowy, używa go
+  do przeglądania internetu, a połowa z nich korzysta z niego przynajmniej raz
+  dziennie
 date: 2022-11-01T21:36:18.349Z
 author: Przemek Miros
 thumbnail: /assets/images/uploads/responsive.webp
