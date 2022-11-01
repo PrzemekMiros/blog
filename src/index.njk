@@ -12,17 +12,19 @@ layout: base.njk
                 <!-- top section -->
                 <div class="post-top">
                     <ul class="meta list-inline mb-0">
-                        <li class="list-inline-item"><a href="#"><img src="/assets/images/other/author-sm.png" class="author" alt="author"/>{{ post.data.author }}</a></li>
+                        <li class="list-inline-item"><a href="#">
+                            <img src="/assets/images/other/author-sm.png" class="author" alt="author"/>{{ post.data.author }}</a>
+                        </li>
                         <li class="list-inline-item">{{ post.data.date }}</li>
                     </ul>
-                    <h5 class="post-title mb-0 mt-4"><a href="blog/blog-single">{{ post.data.title }}</a></h5>
+                    <h5 class="post-title mb-0 mt-4"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h5>
                 </div>
                 <!-- thumbnail -->
                 <div class="thumb rounded">
                     <span class="post-format">
                         <i class="icon-picture"></i>
                     </span>
-                    <a href="blog/blog-single">
+                    <a href="{{ post.url | url }}">
                         <div class="inner">
                             <img src="{{ post.data.thumbnail }}" alt="" />
                         </div>
@@ -45,10 +47,10 @@ layout: base.njk
                         </ul>
                     </div>
                     <div class="float-end d-none d-md-block">
-                        <a href="blog-single" class="more-link">Czytaj dalej<i class="icon-arrow-right"></i></a>
+                        <a href="{{ post.url | url }}" class="more-link">Czytaj dalej<i class="icon-arrow-right"></i></a>
                     </div>
                     <div class="more-button d-block d-md-none float-end">
-                        <a href="blog-single"><span class="icon-options"></span></a>
+                        <a href="{{ post.url | url }}"><span class="icon-options"></span></a>
                     </div>
                 </div>
             </div>
