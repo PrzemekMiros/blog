@@ -8,7 +8,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Inspiration</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">3 Easy Ways To Make Your iPhone Faster</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ post.data.title }}</li>
                 </ol>
             </nav>
 
@@ -19,16 +19,16 @@
                     <div class="post post-single">
 						<!-- post header -->
 						<div class="post-header">
-							<h1 class="title mt-0 mb-3">3 Easy Ways To Make Your iPhone Faster</h1>
+							<h1 class="title mt-0 mb-3">{{ title }}</h1>
 							<ul class="meta list-inline mb-0">
-								<li class="list-inline-item"><a href="#"><img src="/assets/images/other/author-sm.png" class="author" alt="author"/>Katen Doe</a></li>
+								<li class="list-inline-item"><a href="#"><img src="/assets/images/other/author-sm.png" class="author" alt="author"/>{{ author }}</a></li>
 								<li class="list-inline-item"><a href="#">Trending</a></li>
-								<li class="list-inline-item">29 March 2021</li>
+								<li class="list-inline-item">{{ page.date.toUTCString() }}</li>
 							</ul>
 						</div>
 						<!-- featured image -->
 						<div class="featured-image">
-							<img src="/assets/images/posts/featured-lg.jpg" alt="post-title" />
+							<img src="{{ thumbnail | url }}" alt="{{ thumbnail }}" />
 						</div>
 						<!-- post content -->
 						<div class="post-content clearfix">
@@ -68,7 +68,7 @@
 							<img src="/assets/images/other/avatar-about.png" alt="Katen Doe" />
 						</div>
 						<div class="details">
-							<h4 class="name"><a href="#">Katen Doe</a></h4>
+							<h4 class="name"><a href="#">Przemek Miros</a></h4>
 							<p>Hello, I’m a content writer who is fascinated by content fashion, celebrity and lifestyle. She helps clients bring the right content to the right people.</p>
 							<!-- social icons -->
 							<ul class="social-icons list-unstyled list-inline mb-0">
