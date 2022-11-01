@@ -17,7 +17,9 @@
 
 	<link href="public/admin/config.yml" type="text/yaml" rel="cms-config-url">
 
-	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  	{% if path == "home" %}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  	{% endif %}
 
 </head>
 
