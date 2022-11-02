@@ -8,6 +8,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/fonts");
     eleventyConfig.addPassthroughCopy("./src/assets/webfonts");
     eleventyConfig.addPassthroughCopy('./src/admin');
+    
+    eleventyConfig.addFilter('svg', svgFilter);
 
     eleventyConfig.addFilter("readablePostDate", (dateObj) => {
       return DateTime.fromJSDate(dateObj, {
