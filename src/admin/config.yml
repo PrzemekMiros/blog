@@ -20,7 +20,7 @@ collections:
         name: "global"
         file: "src/admin/global.json"
         fields:
-          - { label: "Logo (.svg)", name: "logo", widget: "image", required: true }
+          - { label: "Logo", name: "logo", widget: "image", required: true }
 # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
