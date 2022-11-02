@@ -21,8 +21,6 @@ collections:
         file: "src/admin/global.json"
         fields:
           - { label: "Logo (.svg)", name: "logo", widget: "image", required: true }
-          - { label: "Mobile Menu Icon (.svg)", name: "menu_icon", widget: "image", required: true }
-          - { label: "Close Icon (.svg)", name: "close_icon", widget: "image", required: true }
 # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
