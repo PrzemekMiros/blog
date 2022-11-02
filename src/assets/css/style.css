@@ -2653,7 +2653,7 @@ button:focus {
   margin: 0 5px;
 }
 
-.page-item.active .page-link {
+.page-item [aria-current="active"].page-link {
   z-index: 3;
   color: #FFF;
   border-color: transparent;

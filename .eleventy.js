@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
       }).setLocale('pl').toLocaleString(DateTime.DATE_FULL);
   });
   
-  eleventyConfig.addFilter("postDate", (dateObj) => {
+    eleventyConfig.addFilter("postDate", (dateObj) => {
       return DateTime.fromJSDate(dateObj, {
           zone: "Europe/Amsterdam",
       }).setLocale('pl').toISODate();

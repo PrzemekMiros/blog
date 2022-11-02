@@ -1,12 +1,15 @@
 ---
-title: Main
 layout: base.njk
+pagination: 
+    data: collections.post
+    size: 2
+    alias: blog
 ---
     
     <!-- section main content -->
 	<section class="main-content-md">
         <div class="container-minimal">
-            {%- for post in collections.post -%}
+            {% for post in blog %}
             <!-- post -->
             <div class="post post-xl">
                 <!-- top section -->
@@ -57,13 +60,15 @@ layout: base.njk
             {%- endfor -%}
             <!-- pagination -->
             <nav>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item active" aria-current="page">
-                        <span class="page-link">1</span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                </ul>
+            <ul class="pagination justify-content-center">
+            {%- for pageEntry in pagination.pages %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ pagination.hrefs[ loop.index0 ] }}"
+                    {% if page.url == pagination.hrefs[ loop.index0 ] %} 
+                    aria-current="active"
+                    {% endif %}>{{ loop.index }}</a></li>
+            {%- endfor %}
+            </ul>
             </nav>
         </div>
 	</section>
